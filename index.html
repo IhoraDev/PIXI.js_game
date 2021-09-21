@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shapes</title>
+  </head>
+  <body>
+    <section>
+      <div class="top-stats">
+        <div class="top-stats__tab">
+          <span class="top-stats__label">
+            Current shapes:
+            <h3 id="shapes-number" class="top-stats__info"></h3>
+          </span>
+        </div>
+
+        <div class="top-stats__tab">
+          <span class="top-stats__label">
+            Surface area:
+            <h3 id="surface-area" class="top-stats__info"></h3>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="app" class="app"></div>
+    </section>
+
+    <!-- ********************************************** -->
+    <section class="footer">
+      <button id="decrease-elements" class="decrease">&#8722;</button>
+      <span>Shapes/sec:</span>
+      <b><span id="shapes-number-per-sec"></span></b>
+      <button id="increase-elements" class="increase">+</button>
+
+      <button id="gravity-decrease" class="decrease">&#8722;</button>
+      <span>Gravity:</span>
+      <b><span id="gravity-value"></span></b>
+      <button id="gravity-increase" class="increase">+</button>
+    </section>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>
